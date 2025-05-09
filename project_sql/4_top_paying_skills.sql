@@ -1,14 +1,15 @@
 
 SELECT 
 	skills,
-	COUNT(sjd.job_id) as total_jobs
+	AVG(jpf.salary_year_avg) as salary_avg
 FROM job_postings_fact as jpf
 INNER JOIN skills_job_dim as sjd ON jpf.job_id = sjd.job_id
 INNER JOIN skills_dim skills ON sjd.skill_id = skills.skill_id
 WHERE
-	job_title_short = 'Data Analyst'
+	job_title_short = 'Data Analyst' AND
+	jpf.salary_year_avg IS NOT NULL
 GROUP BY
 	skills
 ORDER BY
-	total_jobs DESC
+	salary_avg DESC
 LIMIT 5
