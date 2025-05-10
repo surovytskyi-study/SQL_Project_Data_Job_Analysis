@@ -143,6 +143,7 @@ manipulation.
 importance of technical skills in data storytelling and decision support.
 
 ![in-demand_skills](assets/in-demand_skills.png)
+
 Table of the demand for the top 5 skills in data analyst job postings
 
 ### 4. Skills Based on Salary
@@ -176,6 +177,7 @@ growing importance of cloud-based analytics environments, suggesting that cloud 
 in data analytics.
 
 ![skills_salary](assets/skills_salary.png)
+
 Table of the average salary for the top 5 paying skills for data analysts
 
 ### 5. Most Optimal Skills to Learn
@@ -204,6 +206,7 @@ ORDER BY
 LIMIT 25
 ```
 ![most_efficient_skills](assets/most_efficient_skills_1.png)
+
 Table of the top 25 most optimal skills for data analyst sorted by salary
 
 Here's a breakdown of the most optimal skills for Data Analysts in 2023:
